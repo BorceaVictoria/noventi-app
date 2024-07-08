@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+}
+
+#navbar {
+  background-color: #f4f3f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .logo {
+      margin: 0 10px;
+    }
+  }
+
+  .physio {
+    color: #c7368c;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  #userInfo {
+    gap: 10px;
+    align-items: center;
+
+    div {
+      text-transform: capitalize;
+    }
+  }
+}
+
+#container {
+  background-color: #98aec6;
+
+  .section-title {
+    padding-left: 20px;
+  }
+
+  /* begin: height fix */
+  position: absolute;
+  width: 100%;
+  height: -webkit-fill-available;
+  /* end: height fix */
+
+  .cardContainer {
+    justify-content: space-around;
+
+    .card {
+      border: 3px solid #98aec673;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-bottom: 20px;
+      background-color: #e4dfd9;
+
+      div:first-child {
+        text-align: center;
+        margin: 10px 0;
+        color: #98aec6;
+      }
+
+      .card-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    margin-bottom: 20px;
+  }
+
+  .main-part-container {
+    justify-content: space-around;
+  }
+
+  .userList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    border: 3px solid #98aec673;
+    padding: 0 10px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: scroll;
+    width: 550px;
+
+    li {
+      display: flex;
+      border-bottom: 1px solid #98aec673;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+      text-transform: capitalize;
+
+      div {
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  .nachste-termine {
+    border: 3px solid #98aec673;
+    height: 380px;
+    width: 380px;
+    background-color: white;
+  }
+
+  .last-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .first-item {
+      background-color: #e0cda0;
+      margin-bottom: 15px;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .first-item > div,
+    .second-item > div {
+      margin-right: 10px;
+    }
+
+    .second-item {
+      background-color: #e0cda0;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .bottom-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .date-time {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        .clock {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .first-bottom-item {
+      background-color: white;
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .second-bottom-item {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      padding: 10px;
+    }
+  }
+}
